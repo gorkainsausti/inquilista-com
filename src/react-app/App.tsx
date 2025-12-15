@@ -26,7 +26,7 @@ const App = () => {
 				<nav className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 					<div className="flex justify-between items-center h-16">
 						<div className="flex items-center">
-							<h1 className="text-2xl font-bold text-primary-600">
+						<h1 className="text-2xl font-bold text-[#c026d3]">
 								Inquilista
 							</h1>
 							<span className="ml-2 text-sm text-gray-600">
@@ -36,7 +36,7 @@ const App = () => {
 						<div className="hidden md:flex items-center space-x-6">
 							<a
 								href="#datos"
-								className="text-gray-700 hover:text-primary-600 transition-colors"
+								className="text-gray-700 hover:text-[#c026d3] transition-colors"
 								tabIndex={0}
 								aria-label="Ver datos"
 							>
@@ -44,7 +44,7 @@ const App = () => {
 							</a>
 							<a
 								href="#ayuda"
-								className="text-gray-700 hover:text-primary-600 transition-colors"
+								className="text-gray-700 hover:text-[#c026d3] transition-colors"
 								tabIndex={0}
 								aria-label="Ayuda"
 							>
@@ -52,14 +52,14 @@ const App = () => {
 							</a>
 							<a
 								href="#sobre-nosotros"
-								className="text-gray-700 hover:text-primary-600 transition-colors"
+								className="text-gray-700 hover:text-[#c026d3] transition-colors"
 								tabIndex={0}
 								aria-label="Sobre nosotros"
 							>
 								Sobre Nosotros
 							</a>
 							<button
-								className="bg-primary-600 text-white px-4 py-2 rounded-lg hover:bg-primary-700 transition-colors"
+								className="bg-[#c026d3] text-white px-4 py-2 rounded-lg hover:bg-[#a21caf] transition-colors"
 								aria-label="Publicar denuncia"
 							>
 								Publicar Denuncia
@@ -70,10 +70,10 @@ const App = () => {
 			</header>
 
 			{/* Hero Section */}
-			<section className="bg-gradient-to-br from-primary-50 to-primary-100 py-16 md:py-24">
+			<section className="bg-gradient-to-br from-[#faf5ff] to-[#f5d0fe] py-16 md:py-24">
 				<div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 					<div className="text-center mb-12">
-						<h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
+					<h2 className="text-4xl md:text-5xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-[#e879f9] to-[#c026d3] mb-4">
 							Luchamos contra la injusticia de la vivienda en España
 						</h2>
 						<p className="text-xl text-gray-600 max-w-3xl mx-auto">
@@ -87,7 +87,7 @@ const App = () => {
 						<div className="bg-white rounded-2xl shadow-xl p-2">
 							<div className="flex flex-col md:flex-row gap-2">
 								<div className="flex-1">
-									<div className="flex border-2 border-gray-200 rounded-lg focus-within:border-primary-500 transition-colors">
+									<div className="flex border-2 border-gray-200 rounded-lg focus-within:border-[#c026d3] transition-colors">
 										<input
 											type="text"
 											placeholder="¿Dónde buscas?"
@@ -97,14 +97,14 @@ const App = () => {
 											aria-label="Ubicación de búsqueda"
 										/>
 									</div>
-								</div>
+			</div>
 								<div className="flex gap-2">
 									<button
 										type="button"
 										onClick={() => handleTypeChange("alquiler")}
 										className={`px-6 py-3 rounded-lg font-medium transition-colors ${
 											searchType === "alquiler"
-												? "bg-primary-600 text-white"
+												? "bg-[#c026d3] text-white"
 												: "bg-gray-100 text-gray-700 hover:bg-gray-200"
 										}`}
 										aria-label="Buscar alquiler"
@@ -117,7 +117,7 @@ const App = () => {
 										onClick={() => handleTypeChange("venta")}
 										className={`px-6 py-3 rounded-lg font-medium transition-colors ${
 											searchType === "venta"
-												? "bg-primary-600 text-white"
+												? "bg-[#c026d3] text-white"
 												: "bg-gray-100 text-gray-700 hover:bg-gray-200"
 										}`}
 										aria-label="Buscar venta"
@@ -125,14 +125,14 @@ const App = () => {
 									>
 										Venta
 									</button>
-									<button
+				<button
 										type="submit"
 										onClick={handleSearchSubmit}
-										className="bg-primary-600 text-white px-8 py-3 rounded-lg font-medium hover:bg-primary-700 transition-colors"
+										className="bg-[#c026d3] text-white px-8 py-3 rounded-lg font-medium hover:bg-[#a21caf] transition-colors"
 										aria-label="Buscar vivienda"
 									>
 										Buscar
-									</button>
+				</button>
 								</div>
 							</div>
 						</div>
@@ -156,9 +156,9 @@ const App = () => {
 
 					<div className="grid md:grid-cols-3 gap-8 mt-12">
 						<div className="text-center p-6 rounded-lg bg-gray-50">
-							<div className="w-16 h-16 bg-primary-100 rounded-full flex items-center justify-center mx-auto mb-4">
+							<div className="w-16 h-16 bg-[#f5d0fe] rounded-full flex items-center justify-center mx-auto mb-4">
 								<svg
-									className="w-8 h-8 text-primary-600"
+									className="w-8 h-8 text-[#c026d3]"
 									fill="none"
 									stroke="currentColor"
 									viewBox="0 0 24 24"
@@ -182,9 +182,9 @@ const App = () => {
 						</div>
 
 						<div className="text-center p-6 rounded-lg bg-gray-50">
-							<div className="w-16 h-16 bg-primary-100 rounded-full flex items-center justify-center mx-auto mb-4">
+							<div className="w-16 h-16 bg-[#f5d0fe] rounded-full flex items-center justify-center mx-auto mb-4">
 								<svg
-									className="w-8 h-8 text-primary-600"
+									className="w-8 h-8 text-[#c026d3]"
 									fill="none"
 									stroke="currentColor"
 									viewBox="0 0 24 24"
@@ -208,9 +208,9 @@ const App = () => {
 						</div>
 
 						<div className="text-center p-6 rounded-lg bg-gray-50">
-							<div className="w-16 h-16 bg-primary-100 rounded-full flex items-center justify-center mx-auto mb-4">
+							<div className="w-16 h-16 bg-[#f5d0fe] rounded-full flex items-center justify-center mx-auto mb-4">
 								<svg
-									className="w-8 h-8 text-primary-600"
+									className="w-8 h-8 text-[#c026d3]"
 									fill="none"
 									stroke="currentColor"
 									viewBox="0 0 24 24"
@@ -246,12 +246,12 @@ const App = () => {
 						<p className="text-lg text-gray-600 max-w-2xl mx-auto">
 							Visualizamos la realidad del mercado inmobiliario español con
 							datos transparentes y actualizados.
-						</p>
-					</div>
+				</p>
+			</div>
 
 					<div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
 						<div className="bg-white p-6 rounded-lg shadow-sm">
-							<div className="text-3xl font-bold text-primary-600 mb-2">
+							<div className="text-3xl font-bold text-[#c026d3] mb-2">
 								45%
 							</div>
 							<div className="text-gray-600">
@@ -261,7 +261,7 @@ const App = () => {
 						</div>
 
 						<div className="bg-white p-6 rounded-lg shadow-sm">
-							<div className="text-3xl font-bold text-primary-600 mb-2">
+							<div className="text-3xl font-bold text-[#c026d3] mb-2">
 								+12%
 							</div>
 							<div className="text-gray-600">
@@ -271,7 +271,7 @@ const App = () => {
 						</div>
 
 						<div className="bg-white p-6 rounded-lg shadow-sm">
-							<div className="text-3xl font-bold text-primary-600 mb-2">
+							<div className="text-3xl font-bold text-[#c026d3] mb-2">
 								1.200+
 							</div>
 							<div className="text-gray-600">
@@ -281,7 +281,7 @@ const App = () => {
 						</div>
 
 						<div className="bg-white p-6 rounded-lg shadow-sm">
-							<div className="text-3xl font-bold text-primary-600 mb-2">
+							<div className="text-3xl font-bold text-[#c026d3] mb-2">
 								68%
 							</div>
 							<div className="text-gray-600">
@@ -306,17 +306,17 @@ const App = () => {
 						</p>
 						<div className="flex flex-col sm:flex-row gap-4 justify-center">
 							<button
-								className="bg-primary-600 text-white px-8 py-3 rounded-lg font-medium hover:bg-primary-700 transition-colors"
+								className="bg-[#c026d3] text-white px-8 py-3 rounded-lg font-medium hover:bg-[#a21caf] transition-colors"
 								aria-label="Publicar denuncia"
 							>
 								Publicar Mi Denuncia
 							</button>
-							<button
-								className="bg-white text-primary-600 border-2 border-primary-600 px-8 py-3 rounded-lg font-medium hover:bg-primary-50 transition-colors"
+				<button
+								className="bg-white text-[#c026d3] border-2 border-[#c026d3] px-8 py-3 rounded-lg font-medium hover:bg-[#f5d0fe] transition-colors"
 								aria-label="Ver recursos"
 							>
 								Ver Recursos
-							</button>
+				</button>
 						</div>
 					</div>
 				</div>
@@ -331,8 +331,8 @@ const App = () => {
 							<p className="text-gray-400">
 								Vivienda justa para todos. Luchamos contra la injusticia
 								inmobiliaria en España.
-							</p>
-						</div>
+				</p>
+			</div>
 						<div>
 							<h5 className="font-semibold mb-4">Enlaces</h5>
 							<ul className="space-y-2 text-gray-400">
