@@ -10,7 +10,8 @@
     "dev:api": "npm run dev --workspace=apps/api",
     "build": "npm run build --workspace=apps/web",
     "build:web": "npm run build --workspace=apps/web",
-    "build:api": "npm run build --workspace=apps/api"
+    "build:api": "npm run build --workspace=apps/api",
+    "deploy": "echo 'Deploy handled by Cloudflare Pages'"
   },
   "devDependencies": {
     "dotenv": "^16.0.0",
